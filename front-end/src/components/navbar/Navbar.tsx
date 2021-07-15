@@ -15,7 +15,7 @@ const Navbar = () => {
 				<ul className='navbar-menu'>
 					<li className='navbar-end'>
 						<Link className='navbar-item' to='/new-video'>
-							Video Form
+							Create New Video
 						</Link>
 					</li>
 				</ul>

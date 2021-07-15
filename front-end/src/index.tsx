@@ -5,6 +5,7 @@ import Video from './components/videos/Video';
 import VideoForm from './components/videos/VideoForm';
 import Navbar from './components/navbar/Navbar';
 import 'bulma/css/bulma.min.css';
+import { ToastContainer } from 'react-toastify';
 
 ReactDOM.render(
   <Router>
@@ -12,9 +13,11 @@ ReactDOM.render(
     <div className='container is-fluid pt-4'>
       <Switch>
         <Route path='/new-video' component={VideoForm} />
+        <Route path='/update/:id' component={VideoForm} />
         <Route path='/:id' component={Video} />
         <Route path='/' component={VideoList} exact />
       </Switch>
+      <ToastContainer />
     </div>
   </Router>,
   document.getElementById('root')
